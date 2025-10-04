@@ -2,10 +2,8 @@ import mysql.connector
 from datetime import datetime
 
 mydb= mysql.connector.connect(host="localhost",user="user",password="password",port="3310")
-#ex1="Create database `images`;"
-
 mycursor=mydb.cursor()
-
+#mycursor.execute("Create database `images`;")
 mycursor.execute("USE `images`")
 #mycursor.execute("CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255))")
 mycursor.execute("""
